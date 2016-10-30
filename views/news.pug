@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title Rbc News
+
+    body
+        a(href='/') Главная
+
+        h3 Категории:
+        ul
+            each item in categories
+                li
+                    a(href=`news?category=${item}`)= item
+
+        if category
+            h3= `Заголовки в категории "${category}"`
+
+            ul
+                each item in titles
+                    li= item

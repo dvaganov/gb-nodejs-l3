@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title Переводчик
+
+    body
+        a(href='/') Главная
+
+        h3 Переводчик с английского языка на русский
+
+        form(method='get' action='translate')
+            input(type='text' name='text' value=originalText)
+            input(type='submit' value='Перевести')
+            input(type='text' disabled value=translatedText)
