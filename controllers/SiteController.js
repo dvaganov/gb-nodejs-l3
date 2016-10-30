@@ -8,9 +8,9 @@ class SiteController extends mvc.Controller {
     }
 
     actionError() {
-        this._app.statusCode = 404;
-        this._app.body = 'Error 404: Page is not found. Try something else.';
-        this._app.send();
+        this.app.statusCode = 404;
+        this.app.body = 'Error 404: Page is not found. Try something else.';
+        this.app.send();
     }
 }
 
